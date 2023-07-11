@@ -1,0 +1,95 @@
+body{
+    margin:0;
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    
+}
+.navbar{
+    width: 20%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+   
+    background-color: gray;
+}
+.avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 1rem;
+    background-color: rebeccapurple;
+}
+.cuerpo{
+    width: 80%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+.container{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    justify-content: space-around;
+    padding:0 1rem;
+    
+}
+button{
+    border-radius: 4px;
+}
+.big-button{
+    
+    align-self: flex-end;
+}
+input{
+    
+    align-self: center;
+}
+
+.disable-button{
+    background-color: gray;
+    color:blue;
+    align-self: flex-start;
+}
+
+.footer{
+height: 50%;
+background-color: blueviolet;
+display: flex;
+justify-content: center;
+align-items: center;
+gap:40px;
+
+}
+
+@media screen and (max-width: 700px){
+    body{
+        flex-direction: column;
+    }
+    .navbar{
+        width: 100%;
+        height:30% ;
+    }
+    .cuerpo{
+        width: 100%;
+        height: 70%;
+    }
+    .big-button{
+       
+        align-self: center;
+    }
+    .disable-button{
+        align-self: center;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+}
